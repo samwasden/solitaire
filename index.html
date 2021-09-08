@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Solitaire</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="gameBoard">
+    <div id="bankBlock">
+        <div class="bank" id="deckBank" onclick="flipThree()">
+            <div class="flipCards" id="bankCards"></div>
+        </div>
+        <div class="bank" id="showBank">
+            <div class="flipCards" id="showCards"></div>
+        </div>
+        <div class="bank" id="emptyBank"></div>
+        <div class="bank" id="spadeBank">
+            <div class="bankBG">
+                <h1>&#9824;</h1>
+            </div>
+            <div class="cardHome" id="spadesCards" onclick="cardClicked(this.id)"></div>
+        </div>
+        <div class="bank" id="diamondBank">
+            <div class="bankBG">
+                <h1>&#9830;</h1>
+            </div>
+            <div class="cardHome" id="diamondsCards" onclick="cardClicked(this.id)"></div>
+        </div>
+        <div class="bank" id="clubBank">
+            <div class="bankBG">
+                <h1>&#9827;</h1>
+            </div>
+            <div class="cardHome" id="clubsCards" onclick="cardClicked(this.id)"></div>
+        </div>
+        <div class="bank" id="heartBank">
+            <div class="bankBG">
+                <h1>&#9829;</h1>
+            </div>
+            <div class="cardHome" id="heartsCards" onclick="cardClicked(this.id)"></div>
+        </div>
+    </div>
+    <div id="buildBlock">
+        <div class="bank" id="build1">
+            <div class="cardPile" id="cards1"></div>
+        </div>
+        <div class="bank" id="build2">
+            <div class="cardPile" id="cards2"></div>
+        </div>
+        <div class="bank" id="build3">
+            <div class="cardPile" id="cards3"></div>
+        </div>
+        <div class="bank" id="build4">
+            <div class="cardPile" id="cards4"></div>
+        </div>
+        <div class="bank" id="build5">
+            <div class="cardPile" id="cards5"></div>
+        </div>
+        <div class="bank" id="build6">
+            <div class="cardPile" id="cards6"></div>
+        </div>
+        <div class="bank" id="build7">
+            <div class="cardPile" id="cards7"></div>
+        </div>
+    </div>
+    <div id="newField">
+        <button onclick="restartGame()" id="newGame">NEW GAME</button>
+    </div>
+</div>
+<script src="script.js"></script>
+<script src="/js"></script>
+</body>
+</html>

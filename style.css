@@ -1,0 +1,338 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+#gameBoard {
+    height: 730px;
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 2%;
+    background-image: url("https://pro2-bar-s3-cdn-cf6.myportfolio.com/ba2b2d9356a746d52a010dc2adeefe28/7e6c3ae0-99b4-419a-b1f0-44b08e778f69_rw_1200.jpg?h=f2b24fcc2c6d40c139067423f93e6f7e");
+    background-repeat: repeat;
+    background-size: 300px;
+    background-blend-mode: overlay;
+    background-color: #39414c;
+    border: 2px solid #FFFFFFBF;
+    border-radius: 5px;
+}
+
+#bankBlock {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    align-items: flex-start;
+    background: none;
+}
+
+#newField {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    align-items: flex-start;
+    background: none;
+    margin-top: 120px;
+    height: 12em;
+}
+
+#newGame {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    font-family: 'Fjalla One', sans-serif;
+    background-color: white;
+    line-height: 30px;
+    color: #285886;
+}
+
+#buildBlock {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    align-items: flex-start;
+    background: none;
+}
+
+.bank {
+    width: 100px;
+    height: 150px;
+    border: 2px solid #FFFFFFBF;
+    border-radius: 5px;
+    background-color: #FFFFFF1A;
+}
+
+#emptyBank {
+    border: none;
+    opacity: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #39414c;
+}
+
+.card {
+    padding: 5px;
+    border: solid 2px #39414c;
+    border-radius: 5px;
+    background-image: url("https://pro2-bar-s3-cdn-cf5.myportfolio.com/ba2b2d9356a746d52a010dc2adeefe28/62fd64b9-fa5f-4ad2-853a-23628b7df978_rw_600.jpg?h=9e6eca250b4ad5a8d16bddb060cdda45");
+    background-size: 106px 156px ;
+    background-position: center;
+    position: relative;
+    margin-top: -120px;
+    font-size: 14pt;
+    width: 86px;
+    height: 136px;
+}
+
+.spades {
+    position: absolute;
+    display: flex;
+    color: #202931;
+}
+
+.clubs {
+    position: absolute;
+    display: flex;
+    color: #202931;
+}
+
+.diamonds {
+    position: absolute;
+    display: flex;
+    color: #840404;
+}
+
+.hearts {
+    position: absolute;
+    display: flex;
+    color: #840404;
+}
+
+.card .value {
+    font-size:15pt;
+    font-family: 'Fjalla One', sans-serif;
+    background-color: white;
+    height: 25px;
+    user-select: none;
+}
+
+.card .symbol {
+    font-size:12pt;
+    font-family: 'Fjalla One', sans-serif;
+    background-color: white;
+    height: 25px;
+    user-select: none;
+}
+
+.bankBG h1 {
+    background: none;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 40pt;
+    opacity: 40%;
+    color: white;
+    user-select: none;
+}
+
+.bankBG {
+    background: none;
+    width: 100px;
+    height: 150px;
+    border: solid 2px rgba(255, 255, 255, 0);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spades h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 40pt;
+    position: absolute;
+    line-height: 135px;
+    margin: 0 0 0 .3em;
+    user-select: none;
+}
+
+.diamonds h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 40pt;
+    position: absolute;
+    line-height: 135px;
+    margin: 0 0 0 .3em;
+    user-select: none;
+}
+
+.clubs h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 40pt;
+    position: absolute;
+    line-height: 135px;
+    margin: 0 0 0 .3em;
+    user-select: none;
+}
+
+.hearts h1 {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 40pt;
+    position: absolute;
+    line-height: 135px;
+    margin: 0 0 0 .3em;
+    user-select: none;
+}
+
+.cardHome {
+    position: absolute;
+    width: 100px;
+    height: 150px;
+}
+
+.cardPile {
+    position: absolute;
+    width: 100px;
+    height: 150px;
+}
+
+.bank h1 {
+    background: none;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 40pt;
+    user-select: none;
+}
+
+.winBG {
+    background: none;
+    width: 100px;
+    height: 150px;
+    border: solid 2px rgba(255, 255, 255, 0);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#newGame:hover {
+    width: 104px;
+    height: 34px;
+    font-size: 22px;
+    line-height: 34px;
+}
+
+#showBank {
+    margin-left: 40px;
+}
+
+@media (max-width: 800px) {
+    #showBank {
+        margin-left: 80px;
+    }
+
+    #gameBoard {
+        height: 350px;
+        width: 96%;
+    }
+
+    .card {
+        padding: 2px;
+        border: solid 1px #39414c;
+        border-radius: 2px;
+        background-image: url("https://pro2-bar-s3-cdn-cf5.myportfolio.com/ba2b2d9356a746d52a010dc2adeefe28/62fd64b9-fa5f-4ad2-853a-23628b7df978_rw_600.jpg?h=9e6eca250b4ad5a8d16bddb060cdda45");
+        background-size: 63px 93px ;
+        background-position: center;
+        position: relative;
+        margin-top: -120px;
+        font-size: 4pt;
+        width: 53px;
+        height: 83px;
+    }
+
+    .spades h1 {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 26pt;
+        position: absolute;
+        line-height: 97px;
+        margin: 0 0 0 .28em;
+        user-select: none;
+    }
+
+    .diamonds h1 {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 26pt;
+        position: absolute;
+        line-height: 97px;
+        margin: 0 0 0 .28em;
+        user-select: none;
+    }
+
+    .clubs h1 {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 26pt;
+        position: absolute;
+        line-height: 97px;
+        margin: 0 0 0 .28em;
+        user-select: none;
+    }
+
+    .hearts h1 {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 26pt;
+        position: absolute;
+        line-height: 97px;
+        margin: 0 0 0 .28em;
+        user-select: none;
+    }
+
+    .bank {
+        width: 59px;
+        height: 89px;
+        border: 1px solid #FFFFFFBF;
+        border-radius: 2px;
+        background-color: #FFFFFF1A;
+    }
+
+    #buildBlock {
+        padding-top: 10px;
+    }
+
+    .bankBG h1 {
+        font-size: 26pt;
+        opacity: 40%;
+        color: white;
+        user-select: none;
+    }
+
+    .bankBG {
+        width: 57px;
+        height: 87px;
+    }
+
+    .card .value {
+        font-size: 11pt;
+
+    }
+
+    .card .symbol {
+        font-size: 9pt;
+    }
+
+    #bankBlock {
+        padding-top: 10px;
+    }
+
+    #newField {
+        margin-top: 0;
+        height: 7em;
+    }
+
+    #newGame {
+        width: 50px;
+        height: 15px;
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+    #newGame:hover {
+        width: 56px;
+        height: 17px;
+        font-size: 9px;
+        line-height: 16px;
+    }
+}
